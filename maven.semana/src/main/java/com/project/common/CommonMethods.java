@@ -9,6 +9,7 @@ public class CommonMethods{
 	
 	public void openBrowser(browserType Browser)
 	{
+
 		switch (Browser)
 		{
 			case Firefox:

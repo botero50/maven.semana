@@ -1,5 +1,7 @@
 package com.maven.tests;
 import com.project.pages.*;
+import com.project.pages.ContactenosPage.contact;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -24,6 +26,8 @@ public class Chat extends CommonMethods implements publicData {
 		getUrl(publicData.EnvironmentURL + publicData.paginaContactenos);
 		ContactenosPage contactenosPage = PageFactory.initElements(driver, ContactenosPage.class);
 		contactenosPage.fillEmail("test@test.com");
+		contactenosPage.selectContact(contact.webMaster);
+		try {Thread.sleep(4000);} catch (InterruptedException e) {e.printStackTrace();}
 	}
 	
 	@After
