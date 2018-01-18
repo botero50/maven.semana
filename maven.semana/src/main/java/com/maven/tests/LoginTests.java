@@ -18,7 +18,7 @@ public class LoginTests extends CommonMethods implements publicData {
 	@Before
 	public void createEnvironment() 
 	{
-		openBrowser(browserType.Chrome);
+		openBrowser(browserType.Firefox);
 		getUrl(publicData.EnvironmentURL + publicData.paginaStore);
 		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
 		homePage.clickLoginButton();

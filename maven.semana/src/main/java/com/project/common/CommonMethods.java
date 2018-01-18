@@ -29,7 +29,11 @@ public class CommonMethods{
 			default:
 				System.out.println( "Error: Browser not defined" );
 		}
-		driver.manage().window().maximize();
+		if(Browser != browserType.Firefox)
+		{
+			driver.manage().window().maximize();
+		}
+		
 	}
 	public void getUrl(String URL)
 	{
