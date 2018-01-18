@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class HomePage {
 
-	@FindBy(id="comp-jbsd9jymactionTitle")
+	@FindBy(css=".lgn0actionTitle")
 	private WebElement loginButton;
 	
 	@FindBy(className="lgn0memberTitle")
